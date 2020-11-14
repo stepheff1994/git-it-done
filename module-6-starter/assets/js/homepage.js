@@ -28,6 +28,7 @@ var getUserRepos = function (user) {
         displayRepos(data, user);
       });
     } else {
+      document.location.replace("./index.html");
       alert("Error: " + response.statusText);
     }
   });
